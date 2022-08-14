@@ -33,15 +33,21 @@ export default function PageComponent({ data }: PageProps<Object | null>) {
         <script>
           (adsbygoogle = window.adsbygoogle || []).push({});
         </script>
-        <div style="display:flex;vertical-algin:middle">
-          <div style="width:10%;margin-top:auto;margin-bottom:auto">
+        <div style="display:flex;border:1px solid black;border-radius:5px">
+          <div style="width:10%;margin-auto;padding:1%">
             <img
               src="/logo.svg"
               height="100%"
               alt="the fresh logo: a sliced lemon dripping with juice"
             />
           </div>
-          <div style="width:10%;margin-left:2.5%;margin-top:auto;margin-bottom:auto">
+          <div style="margin-top:auto;margin-bottom:auto">
+            <h1 style="font-weight:bold">HUMANKIND</h1>
+            <p>a platform for compassion...</p>
+          </div>
+        </div>
+        <div style="display:flex;margin-top:2.5%">
+          <div style="width:22.5%;margin-top:auto;margin-bottom:auto">
             <div style="border-radius:50%;overflow: hidden">
               <img
                 src={"https://donation-platform-back-end.herokuapp.com" + data.user.profilePicture.url}
