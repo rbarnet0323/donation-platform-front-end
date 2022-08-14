@@ -38,11 +38,12 @@ export default function PageComponent({ data }: PageProps<Object | null>) {
             <img
               src="/logo.svg"
               width="75%"
+              vertical-align="middle"
               alt="the fresh logo: a sliced lemon dripping with juice"
             />
           </div>
           <div style="width:15%">
-            <div style="border-radius:50%;overflow: hidden; width: 75%">
+            <div style="border-radius:50%;overflow: hidden; width: 75%;vertical-align:middle">
               <img
                 src={"https://donation-platform-back-end.herokuapp.com" + data.user.profilePicture.url}
                 width="100%"
