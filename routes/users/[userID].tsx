@@ -75,7 +75,7 @@ export default function PageComponent({ data }: PageProps<Object | null>) {
             <p>a platform for compassion...</p>
           </div>
         </div>
-        <div style="display:flex;margin-top:2.5%">
+        <div style="display:flex;margin-top:2.5%;height:500px">
           <div style="width:22.5%;margin-top:auto;margin-bottom:auto">
             <div style="border-radius:50%;overflow: hidden">
               <img
@@ -86,8 +86,8 @@ export default function PageComponent({ data }: PageProps<Object | null>) {
             </div>
           </div>
           <div style="width:75%;margin-left:2.5%">
-            <h1 style="font-weight:bold;height:25%">{data.user.username}:</h1>
-            <p style="border:1px solid black;border-radius:5px;height:75%">{data.user.biography}</p>
+            <h1 style="font-weight:bold;height:5%">{data.user.username}:</h1>
+            <p style="border:1px solid black;border-radius:5px;height:95%">{data.user.biography}</p>
           </div>
         </div>
         <button style="border:1px solid black;border-radius:5px;width:100%;margin-top:2.5%;text-align:center" onclick="location.href='https://donate.stripe.com/test_3cseVY4gw1nc4VOaEE'">Donate</button>
