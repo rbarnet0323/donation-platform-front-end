@@ -6,6 +6,15 @@ import Counter from "../islands/Counter.tsx";
 export default function Home() {
   return (
     <div class={tw`p-4 mx-auto max-w-screen-md`}>
+      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9175508409686273" crossorigin="anonymous"></script>
+      <ins className="adsbygoogle"
+        style="display:inline-block;width:728px;height:90px"
+        data-ad-client="ca-pub-1234567890123456"
+        data-ad-slot="1234567890">
+      </ins>
+      <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
       <img
         src="/logo.svg"
         height="100px"
