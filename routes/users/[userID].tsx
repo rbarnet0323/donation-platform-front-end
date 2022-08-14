@@ -33,7 +33,7 @@ export default function PageComponent({ data }: PageProps<Object | null>) {
         <script>
           (adsbygoogle = window.adsbygoogle || []).push({});
         </script>
-        <div style="display:flex">
+        <div style="display:flex;vertical-algin:middle">
           <div style="width:10%">
             <img
               src="/logo.svg"
