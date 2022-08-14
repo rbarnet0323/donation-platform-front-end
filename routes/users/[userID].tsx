@@ -23,7 +23,7 @@ export default function PageComponent({ data }: PageProps<Object | null>) {
     return <h1>User not found...</h1>;
   }
   return (
-    <div class={tw`w-screen h-screen`} style="display:table-cell;vertical-align:middle;min-width:0px">
+    <div class={tw`w-screen h-screen`} style="display:table-cell;vertical-align:middle;min-height:0px">
       <div class={tw`p-4 mx-auto max-w-screen-md`}>
         <ins className="adsbygoogle"
           style="display:inline-block;width:728px;height:90px"
