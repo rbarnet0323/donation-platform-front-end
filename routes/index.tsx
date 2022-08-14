@@ -7,7 +7,6 @@ export default function Home() {
   return (
     <div class={tw `w-screen h-screen`}>
       <div class={tw`p-4 mx-auto max-w-screen-md`}>
-        <script>document.title="HUMANKIND"</script>
         <ins className="adsbygoogle"
           style="display:inline-block;width:728px;height:90px"
           data-ad-client="ca-pub-1234567890123456"
