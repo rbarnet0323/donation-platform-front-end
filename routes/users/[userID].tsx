@@ -30,7 +30,7 @@ export default function PageComponent({ data }: PageProps<Object | null>) {
           <div class={tw`p-4 mx-auto max-w-screen-md`}>
             <ins className="adsbygoogle"
               style="display:inline-block;width:728px;height:90px"
-              data-ad-client="ca-pub-1234567890123456"
+              data-ad-client="ca-pub-9175508409686273"
               data-ad-slot="1234567890">
             </ins>
             <script>
@@ -49,7 +49,7 @@ export default function PageComponent({ data }: PageProps<Object | null>) {
                 <p>a platform for compassion...</p>
               </div>
               <div style="margin-top:auto;margin-bottom:auto;width:10%">
-                <a>About</a>
+                <a href="https://humankind.ltd/about">About</a>
               </div>
             </div>
             <div style="display:flex;margin-top:2.5%">
@@ -70,7 +70,7 @@ export default function PageComponent({ data }: PageProps<Object | null>) {
         <div class={tw`p-4 mx-auto max-w-screen-md`}>
           <ins className="adsbygoogle"
             style="display:inline-block;width:728px;height:90px"
-            data-ad-client="ca-pub-1234567890123456"
+            data-ad-client="ca-pub-9175508409686273"
             data-ad-slot="1234567890">
           </ins>
           <script>
@@ -89,7 +89,7 @@ export default function PageComponent({ data }: PageProps<Object | null>) {
               <p>a platform for compassion...</p>
             </div>
             <div style="margin-top:auto;margin-bottom:auto;width:10%">
-              <a>About</a>
+              <a href="https://humankind.ltd/about">About</a>
             </div>
           </div>
           <div style="display:flex;margin-top:2.5%;height:400px">
