@@ -36,6 +36,15 @@ export default function Home() {
               <a href="https://humankind.ltd">Home</a>
             </div>
           </div>
+          <h1 style="font-weight:bold;margin-top:2.5%">Our Mission:</h1>
+          <p style="text-align:center">HUMANKIND exists to empower generosity towards the disenfranchised.</p>
+          <h1 style="font-weight:bold;margin-top:2.5%">Instructions:</h1>
+          <p>1. If you or someone you know is in need of help, access a computer at your local public library and create an account with HUMANKIND.</p>
+          <p>2. Once you have created an account with HUMANKIND, you can use the printer(s) to print your QR code.</p>
+          <p>3. Whenever somebody uses their phone to scan your QR code, they will be automatically redirected to your profile where they can make a donation to assist you in your journey.</p>
+          <h1 style="font-weight:bold;margin-top:2.5%">Our Team:</h1>
+          <p>- Ray Barnett (CTO)</p>
+          <p>- Phillip Brady (CEO)</p>
         </div>
       </div>
     </Fragment>
