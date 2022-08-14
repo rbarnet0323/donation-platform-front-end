@@ -61,7 +61,7 @@ export default function PageComponent({ data }: PageProps<Object | null>) {
             <p style="border:1px solid black;border-radius:5px;height:75%">{data.user.biography}</p>
           </div>
         </div>
-        <button style="border:1px solid black;border-radius:5px;width:100%;margin-top:2.5%">Donate</button>
+        <button style="border:1px solid black;border-radius:5px;width:100%;margin-top:2.5%;text-align:center" onclick="location.href='https://donate.stripe.com/test_3cseVY4gw1nc4VOaEE'">Donate</button>
       </div>
     </div>
   );
