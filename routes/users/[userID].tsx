@@ -1,8 +1,8 @@
 /** @jsx h */
-import { h } from "preact";
+import { Fragment, h } from "preact";
+import { Head } from "$fresh/runtime.ts";
 import { tw } from "@twind";
-import { PageProps } from "$fresh/server.ts";
-import { Handlers } from "$fresh/server.ts";
+import { Handlers, PageProps } from "$fresh/server.ts";
 
 export const handler: Handlers<Object | null> = {
   GET: async (_, ctx) => {
@@ -21,6 +21,46 @@ export const handler: Handlers<Object | null> = {
 export default function PageComponent({ data }: PageProps<Object | null>) {
   if (!data) {
     return (
+      <Fragment>
+        <Head>
+          <title>HUMANKIND</title>
+        </Head>
+        <div class={tw`w-screen h-screen`}>
+          <div class={tw`p-4 mx-auto max-w-screen-md`}>
+            <ins className="adsbygoogle"
+              style="display:inline-block;width:728px;height:90px"
+              data-ad-client="ca-pub-1234567890123456"
+              data-ad-slot="1234567890">
+            </ins>
+            <script>
+              (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+            <div style="display:flex;border:1px solid black;border-radius:5px">
+              <div style="width:15%;margin-top:auto;margin-bottom:auto;padding:1%">
+                <img
+                  src="/logo.svg"
+                  height="100%"
+                  alt="the fresh logo: a sliced lemon dripping with juice"
+                />
+              </div>
+              <div style="margin-top:auto;margin-bottom:auto">
+                <h1 style="font-weight:bold">HUMANKIND</h1>
+                <p>a platform for compassion...</p>
+              </div>
+            </div>
+            <div style="display:flex;margin-top:2.5%">
+              <p>User not found...</p>
+            </div>
+          </div>
+        </div>
+      </Fragment>
+    );
+  }
+  return (
+    <Fragment>
+      <Head>
+        <title>HUMANKIND</title>
+      </Head>
       <div class={tw`w-screen h-screen`}>
         <div class={tw`p-4 mx-auto max-w-screen-md`}>
           <ins className="adsbygoogle"
@@ -44,54 +84,24 @@ export default function PageComponent({ data }: PageProps<Object | null>) {
               <p>a platform for compassion...</p>
             </div>
           </div>
-          <div style="display:flex;margin-top:2.5%">
-            <p>User not found...</p>
-          </div>
-        </div>
-      </div>
-    );
-  }
-  return (
-    <div class={tw`w-screen h-screen`}>
-      <div class={tw`p-4 mx-auto max-w-screen-md`}>
-        <ins className="adsbygoogle"
-          style="display:inline-block;width:728px;height:90px"
-          data-ad-client="ca-pub-1234567890123456"
-          data-ad-slot="1234567890">
-        </ins>
-        <script>
-          (adsbygoogle = window.adsbygoogle || []).push({});
-        </script>
-        <div style="display:flex;border:1px solid black;border-radius:5px">
-          <div style="width:15%;margin-top:auto;margin-bottom:auto;padding:1%">
-            <img
-              src="/logo.svg"
-              height="100%"
-              alt="the fresh logo: a sliced lemon dripping with juice"
-            />
-          </div>
-          <div style="margin-top:auto;margin-bottom:auto">
-            <h1 style="font-weight:bold">HUMANKIND</h1>
-            <p>a platform for compassion...</p>
-          </div>
-        </div>
-        <div style="display:flex;margin-top:2.5%;height:500px">
-          <div style="width:22.5%;margin-top:auto;margin-bottom:auto">
-            <div style="border-radius:50%;overflow: hidden">
-              <img
-                src={"https://donation-platform-back-end.herokuapp.com" + data.user.profilePicture.url}
-                height="100%"
-                alt="the fresh logo: a sliced lemon dripping with juice"
-              />
+          <div style="display:flex;margin-top:2.5%;height:400px">
+            <div style="width:22.5%;margin-top:auto;margin-bottom:auto">
+              <div style="border-radius:50%;overflow: hidden">
+                <img
+                  src={"https://donation-platform-back-end.herokuapp.com" + data.user.profilePicture.url}
+                  height="100%"
+                  alt="the fresh logo: a sliced lemon dripping with juice"
+                />
+              </div>
+            </div>
+            <div style="width:75%;margin-left:2.5%">
+              <h1 style="font-weight:bold;height:5%">{data.user.username}:</h1>
+              <p style="border:1px solid black;border-radius:5px;height:95%">{data.user.biography}</p>
             </div>
           </div>
-          <div style="width:75%;margin-left:2.5%">
-            <h1 style="font-weight:bold;height:5%">{data.user.username}:</h1>
-            <p style="border:1px solid black;border-radius:5px;height:95%">{data.user.biography}</p>
-          </div>
+          <button style="border:1px solid black;border-radius:5px;width:100%;margin-top:2.5%;text-align:center" onclick="location.href='https://donate.stripe.com/test_3cseVY4gw1nc4VOaEE'">Donate</button>
         </div>
-        <button style="border:1px solid black;border-radius:5px;width:100%;margin-top:2.5%;text-align:center" onclick="location.href='https://donate.stripe.com/test_3cseVY4gw1nc4VOaEE'">Donate</button>
       </div>
-    </div>
+    </Fragment>
   );
 }
