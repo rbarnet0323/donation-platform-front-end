@@ -42,7 +42,7 @@ export default function PageComponent({ data }: PageProps<Object | null>) {
             />
           </div>
           <div style="width:10%;margin-left:2.5%">
-            <div style="border-radius:50%;overflow: hidden; height: 100%">
+            <div style="border-radius:50%;overflow: hidden">
               <img
                 src={"https://donation-platform-back-end.herokuapp.com" + data.user.profilePicture.url}
                 height="100%"
