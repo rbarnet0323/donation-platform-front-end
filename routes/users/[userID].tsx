@@ -23,7 +23,7 @@ export default function PageComponent({ data }: PageProps<Object | null>) {
     return <h1>User not found...</h1>;
   }
   return (
-    <div class={tw`w-screen h-screen`} style="display:table-cell;vertical-align:middle;max-width:375px">
+    <div class={tw`w-screen h-screen`}>
       <div class={tw`p-4 mx-auto max-w-screen-md`}>
         <ins className="adsbygoogle"
           style="display:inline-block;width:728px;height:90px"
@@ -34,14 +34,14 @@ export default function PageComponent({ data }: PageProps<Object | null>) {
           (adsbygoogle = window.adsbygoogle || []).push({});
         </script>
         <div style="display:flex;vertical-algin:middle">
-          <div style="width:10%">
+          <div style="width:10%;display:table-cell;vertical-align:middle">
             <img
               src="/logo.svg"
               height="100%"
               alt="the fresh logo: a sliced lemon dripping with juice"
             />
           </div>
-          <div style="width:10%;margin-left:2.5%">
+          <div style="width:10%;margin-left:2.5%display:table-cell;vertical-align:middle">
             <div style="border-radius:50%;overflow: hidden">
               <img
                 src={"https://donation-platform-back-end.herokuapp.com" + data.user.profilePicture.url}
