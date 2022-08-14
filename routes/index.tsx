@@ -8,7 +8,7 @@ export default function Home() {
     <div class={tw`p-4 mx-auto max-w-screen-md`}>
       <img
         src="/logo.svg"
-        height="100px"
+        height="25px"
         alt="the fresh logo: a sliced lemon dripping with juice"
       />
       <p class={tw`my-6`}>
