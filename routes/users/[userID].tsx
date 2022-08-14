@@ -44,11 +44,11 @@ export default function PageComponent({ data }: PageProps<Object | null>) {
                   alt="the fresh logo: a sliced lemon dripping with juice"
                 />
               </div>
-              <div style="margin-top:auto;margin-bottom:auto;width:72.5%">
+              <div style="margin-top:auto;margin-bottom:auto;width:70%">
                 <h1 style="font-weight:bold">HUMANKIND</h1>
                 <p>a platform for compassion...</p>
               </div>
-              <div style="margin-top:auto;margin-bottom:auto;width:7.5%">
+              <div style="margin-top:auto;margin-bottom:auto;width:10%">
                 <a>About</a>
               </div>
             </div>
@@ -84,11 +84,11 @@ export default function PageComponent({ data }: PageProps<Object | null>) {
                 alt="the fresh logo: a sliced lemon dripping with juice"
               />
             </div>
-            <div style="margin-top:auto;margin-bottom:auto;width:72.5%">
+            <div style="margin-top:auto;margin-bottom:auto;width:70%">
               <h1 style="font-weight:bold">HUMANKIND</h1>
               <p>a platform for compassion...</p>
             </div>
-            <div style="margin-top:auto;margin-bottom:auto;width:7.5%">
+            <div style="margin-top:auto;margin-bottom:auto;width:10%">
               <a>About</a>
             </div>
           </div>
