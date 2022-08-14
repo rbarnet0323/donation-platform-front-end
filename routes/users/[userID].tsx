@@ -23,7 +23,7 @@ export default function PageComponent({ data }: PageProps<Object | null>) {
     return <h1>User not found...</h1>;
   }
   return (
-    <div class={tw`w-screen h-screen`} style="display:table-cell;vertical-align:middle">
+    <div class={tw`w-screen h-screen`} style="display:table-cell;vertical-align:middle;min-width:0px">
       <div class={tw`p-4 mx-auto max-w-screen-md`}>
         <ins className="adsbygoogle"
           style="display:inline-block;width:728px;height:90px"
@@ -55,7 +55,7 @@ export default function PageComponent({ data }: PageProps<Object | null>) {
             <p style="border:1px solid black;border-radius:5px;height:75%">{data.user.biography}</p>
           </div>
         </div>
-        <button style="border:1px solid black;border-radius:5px;width:100%;margin-top:10px">Donate</button>
+        <button style="border:1px solid black;border-radius:5px;width:100%;margin-top:2.5%">Donate</button>
       </div>
     </div>
   );
