@@ -33,11 +33,9 @@ export default function Home() {
               <p>a platform for compassion...</p>
             </div>
             <div style="margin-top:auto;margin-bottom:auto;width:10%">
-              <a>About</a>
+              <a href="https://humankind.ltd">Home</a>
             </div>
           </div>
-          <button style="border:1px solid black;border-radius:5px;width:100%;margin-top:2.5%;text-align:center">Login</button>
-          <button style="border:1px solid black;border-radius:5px;width:100%;margin-top:2.5%;text-align:center">Create Account</button>
         </div>
       </div>
     </Fragment>
