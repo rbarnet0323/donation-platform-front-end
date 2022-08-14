@@ -8,6 +8,7 @@ export default function Home() {
     <Fragment>
       <Head>
         <title>HUMANKIND</title>
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9175508409686273" crossorigin="anonymous"></script>
       </Head>
       <div class={tw`w-screen h-screen`}>
         <div class={tw`p-4 mx-auto max-w-screen-md`}>
@@ -27,11 +28,16 @@ export default function Home() {
                 alt="the fresh logo: a sliced lemon dripping with juice"
               />
             </div>
-            <div style="margin-top:auto;margin-bottom:auto">
+            <div style="margin-top:auto;margin-bottom:auto;width:72.5%">
               <h1 style="font-weight:bold">HUMANKIND</h1>
               <p>a platform for compassion...</p>
             </div>
+            <div style="margin-top:auto;margin-bottom:auto;width:7.5%">
+              <a>About</a>
+            </div>
           </div>
+          <button style="border:1px solid black;border-radius:5px;width:100%;margin-top:2.5%;text-align:center">Login</button>
+          <button style="border:1px solid black;border-radius:5px;width:100%;margin-top:2.5%;text-align:center">Create Account</button>
         </div>
       </div>
     </Fragment>

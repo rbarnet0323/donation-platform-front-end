@@ -24,6 +24,7 @@ export default function PageComponent({ data }: PageProps<Object | null>) {
       <Fragment>
         <Head>
           <title>HUMANKIND</title>
+          <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9175508409686273" crossorigin="anonymous"></script>
         </Head>
         <div class={tw`w-screen h-screen`}>
           <div class={tw`p-4 mx-auto max-w-screen-md`}>
@@ -43,9 +44,12 @@ export default function PageComponent({ data }: PageProps<Object | null>) {
                   alt="the fresh logo: a sliced lemon dripping with juice"
                 />
               </div>
-              <div style="margin-top:auto;margin-bottom:auto">
+              <div style="margin-top:auto;margin-bottom:auto;width:72.5%">
                 <h1 style="font-weight:bold">HUMANKIND</h1>
                 <p>a platform for compassion...</p>
+              </div>
+              <div style="margin-top:auto;margin-bottom:auto;width:7.5%">
+                <a>About</a>
               </div>
             </div>
             <div style="display:flex;margin-top:2.5%">
@@ -60,6 +64,7 @@ export default function PageComponent({ data }: PageProps<Object | null>) {
     <Fragment>
       <Head>
         <title>HUMANKIND</title>
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9175508409686273" crossorigin="anonymous"></script>
       </Head>
       <div class={tw`w-screen h-screen`}>
         <div class={tw`p-4 mx-auto max-w-screen-md`}>
@@ -79,9 +84,12 @@ export default function PageComponent({ data }: PageProps<Object | null>) {
                 alt="the fresh logo: a sliced lemon dripping with juice"
               />
             </div>
-            <div style="margin-top:auto;margin-bottom:auto">
+            <div style="margin-top:auto;margin-bottom:auto;width:72.5%">
               <h1 style="font-weight:bold">HUMANKIND</h1>
               <p>a platform for compassion...</p>
+            </div>
+            <div style="margin-top:auto;margin-bottom:auto;width:7.5%">
+              <a>About</a>
             </div>
           </div>
           <div style="display:flex;margin-top:2.5%;height:400px">
