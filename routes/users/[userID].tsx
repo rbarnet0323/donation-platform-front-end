@@ -34,14 +34,14 @@ export default function PageComponent({ data }: PageProps<Object | null>) {
           (adsbygoogle = window.adsbygoogle || []).push({});
         </script>
         <div style="display:flex">
-          <div style="width:33%">
+          <div style="width:25%">
             <img
               src="/logo.svg"
               width="100px"
               alt="the fresh logo: a sliced lemon dripping with juice"
             />
           </div>
-          <div style="width:33%">
+          <div style="width:25%">
             <div style="border-radius:50%;overflow: hidden; width: 100px">
               <img
                 src={"https://donation-platform-back-end.herokuapp.com" + data.user.profilePicture.url}
@@ -50,14 +50,12 @@ export default function PageComponent({ data }: PageProps<Object | null>) {
               />
             </div>
           </div>
-          <div style="width:33%">
+          <div style="width:50%">
             <h1 style="font-weight:bold;height:25%">{data.user.username}:</h1>
             <p style="border:1px solid black;border-radius:5px;height:75%">{data.user.biography}</p>
           </div>
         </div>
-        <pre class={tw`my-6`}>
-          {JSON.stringify(data.user, null, 2)}
-        </pre>
+        <button style="border:1px solid black;border-radius:5px;width:100%;margin-top:10px">Donate</button>
       </div>
     </div>
   );
