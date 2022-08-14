@@ -34,7 +34,7 @@ export default function PageComponent({ data }: PageProps<Object | null>) {
           (adsbygoogle = window.adsbygoogle || []).push({});
         </script>
         <div style="display:flex;border:1px solid black;border-radius:5px">
-          <div style="width:10%;margin-top:auto;margin-bottom:auto;padding:1%">
+          <div style="width:15%;margin-top:auto;margin-bottom:auto;padding:1%">
             <img
               src="/logo.svg"
               height="100%"
