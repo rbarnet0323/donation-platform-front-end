@@ -6,6 +6,7 @@ import Counter from "../islands/Counter.tsx";
 export default function Home() {
   return (
     <div class={tw `w-screen h-screen`}>
+      <script>document.title="HUMANKIND"</script>
       <div class={tw`p-4 mx-auto max-w-screen-md`}>
         <img
           src="/logo.svg"
@@ -17,6 +18,9 @@ export default function Home() {
           file, and refresh.
         </p>
         <Counter start={3} />
+      </div>
+      <div
+        style="position:absolute;bottom:0px;left:0px;right:0px;height:90px">
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9175508409686273" crossorigin="anonymous"></script>
         <ins className="adsbygoogle"
           style="display:inline-block;width:728px;height:90px"
