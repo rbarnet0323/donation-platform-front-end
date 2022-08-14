@@ -34,23 +34,23 @@ export default function PageComponent({ data }: PageProps<Object | null>) {
           (adsbygoogle = window.adsbygoogle || []).push({});
         </script>
         <div style="display:flex">
-          <div style="width:25%">
+          <div style="width:15%">
             <img
               src="/logo.svg"
-              width="100px"
+              width="75%"
               alt="the fresh logo: a sliced lemon dripping with juice"
             />
           </div>
-          <div style="width:25%">
-            <div style="border-radius:50%;overflow: hidden; width: 100px">
+          <div style="width:15%">
+            <div style="border-radius:50%;overflow: hidden; width: 75%">
               <img
                 src={"https://donation-platform-back-end.herokuapp.com" + data.user.profilePicture.url}
-                width="100px"
+                width="100%"
                 alt="the fresh logo: a sliced lemon dripping with juice"
               />
             </div>
           </div>
-          <div style="width:50%">
+          <div style="width:70%">
             <h1 style="font-weight:bold;height:25%">{data.user.username}:</h1>
             <p style="border:1px solid black;border-radius:5px;height:75%">{data.user.biography}</p>
           </div>
