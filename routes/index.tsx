@@ -27,9 +27,6 @@ export default function Home() {
             <p>a platform for compassion...</p>
           </div>
         </div>
-        <div style="display:flex;margin-top:2.5%">
-          <p>User not found...</p>
-        </div>
       </div>
     </div>
   );
