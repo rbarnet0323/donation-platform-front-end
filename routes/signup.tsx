@@ -3,7 +3,7 @@ import { Fragment, h } from "preact";
 import { Head } from "$fresh/runtime.ts";
 import { tw } from "@twind";
 
-export default function Home() {
+export default function SignUp() {
   return (
     <Fragment>
       <Head>
