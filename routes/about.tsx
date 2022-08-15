@@ -40,7 +40,7 @@ export default function About() {
           <p style="text-align:center">HUMANKIND exists to empower generosity towards the disenfranchised.</p>
           <h1 style="font-weight:bold;margin-top:2.5%">Instructions:</h1>
           <p>1. If you or someone you know is in need of help, simply access a computer at your local public library and create an account with HUMANKIND.</p>
-          <p>2. Once you have created an account with HUMANKIND, you can use the printer(s) to print your unique QR code.</p>
+          <p>2. Once you have created an account with HUMANKIND, you can use the available printer(s) to print your unique QR code.</p>
           <p>3. Whenever somebody uses their phone to scan your QR code, they will be automatically redirected to your profile where they can make a donation to assist you in your journey.</p>
           <h1 style="font-weight:bold;margin-top:2.5%">Our Team:</h1>
           <p>- Ray Barnett (CTO) <a style="color:blue;text-decoration:underline" href="https://www.linkedin.com/in/ray-barnett-a21b281a6/">LinkedIn</a></p>
