@@ -96,7 +96,7 @@ export default function PageComponent({ data }: PageProps<Object | null>) {
             <div style="width:22.5%;margin-top:auto;margin-bottom:auto">
               <div style="border-radius:50%;overflow: hidden">
                 <img
-                  src={"https://donation-platform-back-end.herokuapp.com" + data.user.profilePicture.url}
+                  src={data.user.profilePicture.url}
                   height="100%"
                   alt="the fresh logo: a sliced lemon dripping with juice"
                 />
