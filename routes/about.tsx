@@ -42,7 +42,7 @@ export default function About() {
           <p>1. If you or someone you know is in need of help, simply access a computer at your local public library and create an account with HUMANKIND.</p>
           <p>2. Once you have created an account with HUMANKIND, you can use the available printer(s) to print your unique QR code.</p>
           <p>3. Whenever somebody uses their phone to scan your QR code, they will be automatically redirected to your profile where they can make a donation to assist you in your journey.</p>
-          <p>4. One of our volunteers will mail you your earnings via general delivery.</p>
+          <p>4. One of our volunteers will mail you your earnings via USPS general delivery.</p>
           <h1 style="font-weight:bold;margin-top:2.5%">Our Team:</h1>
           <p>- Ray Barnett (CTO) <a style="color:blue;text-decoration:underline" href="https://www.linkedin.com/in/ray-barnett-a21b281a6/">LinkedIn</a></p>
           <p>- Phillip Brady (CEO) <a style="color:blue;text-decoration:underline" href="https://www.linkedin.com/in/phillip-brady-a411a1154/">LinkedIn</a></p>
