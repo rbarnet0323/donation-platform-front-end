@@ -33,7 +33,7 @@ export default function SignUp() {
               <p>a platform for compassion...</p>
             </div>
             <div style="margin-top:auto;margin-bottom:auto;width:10%">
-              <a href="https://humankind.ltd/about">About</a>
+              <a href="https://humankind.ltd">Home</a>
             </div>
           </div>
         </div>
