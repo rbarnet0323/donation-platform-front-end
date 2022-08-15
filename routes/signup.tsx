@@ -36,8 +36,6 @@ export default function Home() {
               <a href="https://humankind.ltd/about">About</a>
             </div>
           </div>
-          <button style="border:1px solid black;border-radius:5px;width:100%;margin-top:2.5%;text-align:center" onclick="location.href='https://humankind.ltd/signin'">Login</button>
-          <button style="border:1px solid black;border-radius:5px;width:100%;margin-top:2.5%;text-align:center" onclick="location.href='https://humankind.ltd/signup">Create Account</button>
         </div>
       </div>
     </Fragment>
