@@ -6,6 +6,7 @@ import { Handlers, PageProps } from "$fresh/server.ts";
 import Stripe from "https://esm.sh/stripe?target=deno";
 import GoogleAd from "../../islands/GoogleAd.tsx";
 import NavBar from "../../islands/NavBar.tsx";
+import Profile from "../../islands/Profile.tsx";
 
 const stripe = Stripe("sk_test_51LWRSgJCDjxWO9cJNB4j8iMgZd68TzXoPJ48IMjuZMrYKBFzEu5vMr7hvzV1kOyTxoTfDsSclaus35ymQUSjbIL600K38H6PJP", {
   httpClient: Stripe.createFetchHttpClient(),
@@ -79,21 +80,7 @@ export default function PageComponent({ data }: PageProps<Object | null>) {
         <div class={tw`p-4 mx-auto max-w-screen-md`}>
           <GoogleAd/>
           <NavBar isHome={false}/>
-          <div style="display:flex;margin-top:2.5%;height:400px">
-            <div style="width:22.5%;margin-top:auto;margin-bottom:auto">
-              <div style="border-radius:50%;overflow: hidden">
-                <img
-                  src={data.user.profilePicture.url}
-                  height="100%"
-                  alt="profile picture"
-                />
-              </div>
-            </div>
-            <div style="width:75%;margin-left:2.5%">
-              <h1 style="font-weight:bold;height:5%">{data.user.username}:</h1>
-              <p style="border:1px solid black;border-radius:5px;height:95%">{data.user.biography}</p>
-            </div>
-          </div>
+          <Profile profilePicture={data.user.profilePicture.url} username={data.user.username} biography={data.user.biography}/>
           <form method="GET" action={session.url}>
             <button type="submit" style="border:1px solid black;border-radius:5px;width:100%;margin-top:2.5%;text-align:center">Donate</button>
           </form>
