@@ -15,8 +15,8 @@ export default function Home() {
         <div class={tw`p-4 mx-auto max-w-screen-md`}>
           <GoogleAd/>
           <NavBar isHome={true}/>
-          <button style="border:1px solid black;border-radius:5px;width:100%;margin-top:2.5%;text-align:center" onclick="location.href='https://humankind.ltd/signin'">Login</button>
-          <button style="border:1px solid black;border-radius:5px;width:100%;margin-top:2.5%;text-align:center" onclick="location.href='https://humankind.ltd/signup'">Create Account</button>
+          <button style="border:1px solid black;border-radius:5px;width:100%;margin-top:2.5%;text-align:center" onclick="location.href='/signin'">Login</button>
+          <button style="border:1px solid black;border-radius:5px;width:100%;margin-top:2.5%;text-align:center" onclick="location.href='/signup'">Create Account</button>
           <p style="text-align:center;margin-top:2.5%">HUMANKIND is currently in construction...</p>
         </div>
       </div>

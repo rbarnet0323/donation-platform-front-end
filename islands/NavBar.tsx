@@ -9,7 +9,7 @@ export default function NavBar(props) {
           <img
             src="/logo.svg"
             height="100%"
-            alt="the fresh logo: a sliced lemon dripping with juice"
+            alt="HUMANKIND logo"
           />
         </div>
         <div style="margin-top:auto;margin-bottom:auto;width:70%">
@@ -17,7 +17,7 @@ export default function NavBar(props) {
           <p>a platform for compassion...</p>
         </div>
         <div style="margin-top:auto;margin-bottom:auto;width:10%">
-          <a href="https://humankind.ltd/about">About</a>
+          <a href="/about">About</a>
         </div>
       </div>
     );
@@ -29,7 +29,7 @@ export default function NavBar(props) {
           <img
             src="/logo.svg"
             height="100%"
-            alt="the fresh logo: a sliced lemon dripping with juice"
+            alt="HUMANKIND logo"
           />
         </div>
         <div style="margin-top:auto;margin-bottom:auto;width:70%">
@@ -37,7 +37,7 @@ export default function NavBar(props) {
           <p>a platform for compassion...</p>
         </div>
         <div style="margin-top:auto;margin-bottom:auto;width:10%">
-          <a href="https://humankind.ltd">Home</a>
+          <a href="/">Home</a>
         </div>
       </div>
     );
