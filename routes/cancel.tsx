@@ -15,6 +15,8 @@ export default function Cancel() {
         <div class={tw`p-4 mx-auto max-w-screen-md`}>
           <GoogleAd/>
           <NavBar isHome={false}/>
+          <p>- Your donation has been canceled.</p>
+          <p>- Your card was not charged.</p>
         </div>
       </div>
     </Fragment>

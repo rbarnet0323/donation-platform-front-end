@@ -19,7 +19,7 @@ export const handler: Handlers<Object | null> = {
     const res = await fetch(
       `https://donation-platform-back-end.herokuapp.com/api/users/${userID}?populate=*`,
     );
-    if (res.status === 404 || res.status === 204 || res.status === 500) {
+    if (res.status !== 200) {
       return ctx.render(null);
     }
     const user: Object = await res.json();
