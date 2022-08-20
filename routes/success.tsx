@@ -33,7 +33,6 @@ export default function PageComponent({ data }: PageProps<Object | null>) {
           <p>- Thank you for your donation to {data.stripe.metadata.username}.</p>
           <p>- Your payment was processed successfully.</p>
         </div>
-        <pre>{JSON.stringify(data, null, 2)}</pre>
       </div>
     </Fragment>
   );
