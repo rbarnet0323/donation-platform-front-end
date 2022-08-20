@@ -3,13 +3,15 @@
 // This file is automatically updated during development when running `dev.ts`.
 
 import * as $0 from "./routes/_404.tsx";
-import * as $1 from "./routes/about.tsx";
-import * as $2 from "./routes/cancel.tsx";
-import * as $3 from "./routes/index.tsx";
-import * as $4 from "./routes/signin.tsx";
-import * as $5 from "./routes/signup.tsx";
-import * as $6 from "./routes/success.tsx";
-import * as $7 from "./routes/users/[userID].tsx";
+import * as $1 from "./routes/_middleware.ts";
+import * as $2 from "./routes/about.tsx";
+import * as $3 from "./routes/cancel.tsx";
+import * as $4 from "./routes/index.tsx";
+import * as $5 from "./routes/signin.tsx";
+import * as $6 from "./routes/signout.tsx";
+import * as $7 from "./routes/signup.tsx";
+import * as $8 from "./routes/success.tsx";
+import * as $9 from "./routes/users/[userID].tsx";
 import * as $$0 from "./islands/GoogleAd.tsx";
 import * as $$1 from "./islands/LoginForm.tsx";
 import * as $$2 from "./islands/NavBar.tsx";
@@ -18,13 +20,15 @@ import * as $$3 from "./islands/Profile.tsx";
 const manifest = {
   routes: {
     "./routes/_404.tsx": $0,
-    "./routes/about.tsx": $1,
-    "./routes/cancel.tsx": $2,
-    "./routes/index.tsx": $3,
-    "./routes/signin.tsx": $4,
-    "./routes/signup.tsx": $5,
-    "./routes/success.tsx": $6,
-    "./routes/users/[userID].tsx": $7,
+    "./routes/_middleware.ts": $1,
+    "./routes/about.tsx": $2,
+    "./routes/cancel.tsx": $3,
+    "./routes/index.tsx": $4,
+    "./routes/signin.tsx": $5,
+    "./routes/signout.tsx": $6,
+    "./routes/signup.tsx": $7,
+    "./routes/success.tsx": $8,
+    "./routes/users/[userID].tsx": $9,
   },
   islands: {
     "./islands/GoogleAd.tsx": $$0,
