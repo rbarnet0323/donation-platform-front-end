@@ -82,7 +82,7 @@ export default function PageComponent({ data }: PageProps<Object | null>) {
         <div class={tw`p-4 mx-auto max-w-screen-md`}>
           <GoogleAd/>
           <NavBar isHome={false}/>
-          <Profile profilePicture={data.user.profilePicture.url} username={data.user.username} biography={data.user.biography}/>
+          <Profile profilePicture={data.user.profilePicture.url} username={data.user.username} biography={data.user.biography} edit={false}/>
           <form method="GET" action={session.url}>
             <button type="submit" style="border:1px solid black;border-radius:5px;width:100%;margin-top:2.5%;text-align:center">Donate</button>
           </form>

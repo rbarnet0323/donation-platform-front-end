@@ -37,7 +37,7 @@ export default function PageComponent({ data }: PageProps<Object | null>) {
         </Head>
         <div class={tw`w-screen h-screen`}>
           <div class={tw`p-4 mx-auto max-w-screen-md`}>
-            <Profile profilePicture={data.user.profilePicture.url} username={data.user.username} biography={data.user.biography}/>
+            <Profile profilePicture={data.user.profilePicture.url} username={data.user.username} biography={data.user.biography} edit={true}/>
             <h1 style="font-weight:bold;margin-top:2.5%">Donate to {data.user.username}:</h1>
             <div style="display:flex;justify-content:center">
               <img
