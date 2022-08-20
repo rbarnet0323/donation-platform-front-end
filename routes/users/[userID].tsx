@@ -66,7 +66,7 @@ export default function PageComponent({ data }: PageProps<Object | null>) {
             <GoogleAd/>
             <NavBar isHome={false}/>
             <div style="display:flex;margin-top:2.5%">
-              <p>User not found...</p>
+              <p>- User not found...</p>
             </div>
           </div>
         </div>
