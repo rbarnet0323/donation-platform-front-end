@@ -42,10 +42,12 @@ export const handler: Handlers<Object | null> = {
       payment_intent_data: {
         metadata: {
           userID: userID,
+          username: user.username,
         }
       },
       metadata: {
         userID: userID,
+        username: user.username,
       }
     });
     return ctx.render({ user: user });
