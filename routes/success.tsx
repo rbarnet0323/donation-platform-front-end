@@ -30,7 +30,7 @@ export default function PageComponent({ data }: PageProps<Object | null>) {
         <div class={tw`p-4 mx-auto max-w-screen-md`}>
           <GoogleAd/>
           <NavBar isHome={false}/>
-          <p>- Thank you for your donation to {data.stripe.metadata.username}.</p>
+          <p>- Thank you for your donation of ${(data.stripe.amount_total / 100).toFixed(2)} to {data.stripe.metadata.username}.</p>
           <p>- Your payment was processed successfully.</p>
         </div>
       </div>
