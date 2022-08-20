@@ -42,7 +42,7 @@ export default function PageComponent({ data }: PageProps<Object | null>) {
             <div style="display:flex;justify-content:center">
               <img
                 src={data.qr}
-                style="border:1px solid black;height:400px"
+                style="border:1px solid black;border-radius:5px;height:400px"
               />
             </div>
             <button style="border:1px solid black;border-radius:5px;width:100%;margin-top:2.5%;text-align:center" onclick="window.print()">Print QR Code</button>
