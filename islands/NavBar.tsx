@@ -4,7 +4,7 @@ import { h } from "preact";
 export default function NavBar(props) {
   if (props.isHome) {
     return (
-      <div style="display:flex;border:1px solid black;border-radius:5px">
+      <div style="display:flex;border:1px solid black;border-radius:5px;background-color:white">
         <div style="width:15%;margin-top:auto;margin-bottom:auto;padding:1%">
           <img
             src="/logo.svg"
@@ -24,7 +24,7 @@ export default function NavBar(props) {
   }
   else {
     return (
-      <div style="display:flex;border:1px solid black;border-radius:5px">
+      <div style="display:flex;border:1px solid black;border-radius:5px;background-color:white">
         <div style="width:15%;margin-top:auto;margin-bottom:auto;padding:1%">
           <img
             src="/logo.svg"
