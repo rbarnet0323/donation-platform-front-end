@@ -15,7 +15,7 @@ export default function Error() {
         <div class={tw`p-4 mx-auto max-w-screen-md`}>
           <GoogleAd/>
           <NavBar isHome={false}/>
-          <p>- Page not found...</p>
+          <p style="margin-top:2.5%">- Page not found...</p>
         </div>
       </div>
     </Fragment>
