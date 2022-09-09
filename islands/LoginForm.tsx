@@ -1,6 +1,3 @@
-/** @jsx h */
-import { h } from "preact";
-
 export default function LoginForm() {
   return (
     <form id="loginForm" method="POST" action="/signin">

@@ -1,18 +1,15 @@
-/** @jsx h */
-import { Fragment, h } from "preact";
 import { Head } from "$fresh/runtime.ts";
-import { tw } from "@twind";
 import GoogleAd from "../islands/GoogleAd.tsx";
 import NavBar from "../islands/NavBar.tsx";
 
 export default function About() {
   return (
-    <Fragment>
+    <>
       <Head>
         <title>HUMANKIND</title>
       </Head>
-      <div class={tw`w-screen h-screen`}>
-        <div class={tw`p-4 mx-auto max-w-screen-md`}>
+      <div class="w-screen h-screen">
+        <div class="p-4 mx-auto max-w-screen-md">
           <GoogleAd/>
           <NavBar isHome={false}/>
           <h1 style="font-weight:bold;margin-top:2.5%">Our Mission:</h1>
@@ -31,6 +28,6 @@ export default function About() {
           <p>- Phillip Brady (CEO) <a style="color:blue;text-decoration:underline" href="https://www.linkedin.com/in/phillip-brady-a411a1154/">LinkedIn</a></p>
         </div>
       </div>
-    </Fragment>
+    </>
   );
 }

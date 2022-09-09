@@ -1,7 +1,4 @@
-/** @jsx h */
-import { Fragment, h } from "preact";
 import { Head } from "$fresh/runtime.ts";
-import { tw } from "@twind";
 import { Handlers, PageProps } from "$fresh/server.ts";
 import { qrcode } from "https://deno.land/x/qrcode/mod.ts";
 import GoogleAd from "../islands/GoogleAd.tsx";
@@ -31,12 +28,12 @@ export const handler: Handlers<Object | null> = {
 export default function PageComponent({ data }: PageProps<Object | null>) {
   if (data != null) {
     return (
-      <Fragment>
+      <>
         <Head>
           <title>HUMANKIND</title>
         </Head>
-        <div class={tw`w-screen h-screen`}>
-          <div class={tw`p-4 mx-auto max-w-screen-md`}>
+        <div class="w-screen h-screen">
+          <div class="p-4 mx-auto max-w-screen-md">
             <Profile profilePicture={data.user.profilePicture.url} username={data.user.username} biography={data.user.biography} edit={true}/>
             <h1 style="font-weight:bold;margin-top:2.5%">Donate to {data.user.username}:</h1>
             <div style="display:flex;justify-content:center">
@@ -49,17 +46,17 @@ export default function PageComponent({ data }: PageProps<Object | null>) {
             <button style="border:1px solid black;border-radius:5px;width:100%;margin-top:2.5%;text-align:center" onclick="location.href='/signout'">Sign Out</button>
           </div>
         </div>
-      </Fragment>
+      </>
     );
   }
   else {
     return (
-      <Fragment>
+      <>
         <Head>
           <title>HUMANKIND</title>
         </Head>
-        <div class={tw`w-screen h-screen`}>
-          <div class={tw`p-4 mx-auto max-w-screen-md`}>
+        <div class="w-screen h-screen">
+          <div class="p-4 mx-auto max-w-screen-md">
             <GoogleAd/>
             <NavBar isHome={true}/>
             <button style="border:1px solid black;border-radius:5px;width:100%;margin-top:2.5%;text-align:center" onclick="location.href='/signin'">Login</button>
@@ -67,7 +64,7 @@ export default function PageComponent({ data }: PageProps<Object | null>) {
             <p style="text-align:center;margin-top:2.5%">HUMANKIND is currently in construction...</p>
           </div>
         </div>
-      </Fragment>
+      </>
     );
   }
 }

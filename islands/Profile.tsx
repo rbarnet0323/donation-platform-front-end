@@ -1,5 +1,3 @@
-/** @jsx h */
-import { Fragment, h } from "preact";
 import { Head } from "$fresh/runtime.ts";
 
 function updateBiography(newValue) {

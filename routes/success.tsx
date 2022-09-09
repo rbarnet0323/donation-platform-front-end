@@ -1,7 +1,4 @@
-/** @jsx h */
-import { Fragment, h } from "preact";
 import { Head } from "$fresh/runtime.ts";
-import { tw } from "@twind";
 import { Handlers, PageProps } from "$fresh/server.ts";
 import Stripe from "https://esm.sh/stripe?target=deno";
 import GoogleAd from "../islands/GoogleAd.tsx";
@@ -22,18 +19,18 @@ export const handler: Handlers<Object | null> = {
 
 export default function PageComponent({ data }: PageProps<Object | null>) {
   return (
-    <Fragment>
+    <>
       <Head>
         <title>HUMANKIND</title>
       </Head>
-      <div class={tw`w-screen h-screen`}>
-        <div class={tw`p-4 mx-auto max-w-screen-md`}>
+      <div class="w-screen h-screen">
+        <div class="p-4 mx-auto max-w-screen-md">
           <GoogleAd/>
           <NavBar isHome={false}/>
           <p style="margin-top:2.5%">- Thank you for your donation of ${(data.stripe.amount_total / 100).toFixed(2)} to {data.stripe.metadata.username}.</p>
           <p>- Your payment was processed successfully.</p>
         </div>
       </div>
-    </Fragment>
+    </>
   );
 }
